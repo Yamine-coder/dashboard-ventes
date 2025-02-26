@@ -132,3 +132,6 @@ def update_dashboard(start_date, end_date, selected_rayons, selected_produit, n_
 # Lancement de l'application
 if __name__ == '__main__':
     app.run_server(debug=True)
+
+server = app.server  # Ajout pour Gunicorn
+
